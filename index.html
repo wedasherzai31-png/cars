@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .car-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .car-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .car-card:hover {
+      transform: scale(1.03);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .car-info {
+      padding: 15px;
+    }
+
+    .car-info h3 {
+      margin: 0 0 10px;
+      color: #444;
+    }
+
+    .car-info p {
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Car Showcase</h1>
+
+  <div class="car-list">
+
+    <div class="car-card">
+      <img src="https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_1280.jpg" alt="Classic Car">
+      <div class="car-info">
+        <h3>Classic Mustang</h3>
+        <p>A timeless American muscle car known for its powerful performance and vintage style.</p>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/audi-1867431_1280.jpg" alt="Audi">
+      <div class="car-info">
+        <h3>Audi R8</h3>
+        <p>A luxury sports car combining style, speed, and advanced engineering from Audi.</p>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://cdn.pixabay.com/photo/2014/04/05/11/39/ferrari-316056_1280.jpg" alt="Ferrari">
+      <div class="car-info">
+        <h3>Ferrari 458</h3>
+        <p>An Italian icon that delivers stunning looks and exhilarating performance.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
